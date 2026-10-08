@@ -1,0 +1,30 @@
+PROJECT IMPLEMENTATION NOTES
+
+Core implementation preserved from the supplied source:
+- NumPy / Pandas preprocessing
+- StandardScaler
+- train/test split
+- Conv1D CNN
+- Adam + binary cross entropy
+- TensorFlow Lite conversion
+- representative dataset
+- full INT8 TFLite
+- model-size comparison
+- inference-time comparison
+- training visualization
+- CSV results
+
+Improvements added for a real project:
+- real CSV loading
+- configurable single-label or two-file datasets
+- train-only scaler fitting to avoid leakage
+- validation split
+- correct INT8 input/output dequantization handling during evaluation
+- FP32 TFLite baseline in addition to Keras FP32
+- precision/recall/F1
+- confusion matrices
+- reproducible random seeds
+- PowerShell one-command execution
+- saved processed arrays and model artifacts
+
+Do not claim that synthetic-data results are N-BaIoT results.
